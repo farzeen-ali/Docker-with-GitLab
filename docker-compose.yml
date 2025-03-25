@@ -11,7 +11,7 @@ services:
       GITLAB_OMNIBUS_CONFIG: |
         gitlab_rails['initial_root_password'] = 'FArzeen@123456789'
         puma['worker_processes'] = 0
-        external_url 'http://my-gitlab-server'
+        external_url 'http://my-gitlab-server:8000'
     volumes:
       - ./gitlab/config:/etc/gitlab
       - ./gitlab/logs:/var/log/gitlab
